@@ -1,18 +1,18 @@
 class AppleDocs < Formula
   desc "CLI to explore Apple Developer Documentation"
   homepage "https://github.com/techprimate/apple-docs-cli"
-  version "0.0.2"
+  version "0.0.3"
 
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://packages.techprimate.com/apple-docs/bin/v0.0.2/apple-docs-darwin-arm64"
-    sha256 "a5669672f897904314aac53fa592b0be3656bfeb353160d15db88bb0268b70cb"
+    url "https://packages.techprimate.com/apple-docs/bin/v0.0.3/apple-docs-darwin-arm64"
+    sha256 "89cb3c3b0e7d0fc06a8cf6583077e0b2e86a50cafc8f027450563bc9f7be8d36"
   end
 
   if Hardware::CPU.intel?
-    url "https://packages.techprimate.com/apple-docs/bin/v0.0.2/apple-docs-darwin-amd64"
-    sha256 "5407760cb3b50763e3cbcfcb792f8167dc104b4e93c9d3e133b67bebac49f959"
+    url "https://packages.techprimate.com/apple-docs/bin/v0.0.3/apple-docs-darwin-amd64"
+    sha256 "b825003de65e87ae08959c127eacdb7d19676633fc70f5d1fec4dbbbb16323bd"
   end
 
   def install
