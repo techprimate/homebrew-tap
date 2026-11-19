@@ -1,7 +1,7 @@
 class AppleDocs < Formula
   desc "CLI to explore Apple Developer Documentation"
   homepage "https://github.com/techprimate/apple-docs-cli"
-  version "0.0.10"
+  version "0.1.0"
   license "FSL-1.1-MIT"
   revision 1 if version.to_s == "0.0.4"
   revision 2 if version.to_s == "0.0.5"
@@ -10,23 +10,23 @@ class AppleDocs < Formula
     depends_on macos: :ventura
 
     on_arm do
-      url "https://packages.techprimate.com/apple-docs/bin/v0.0.10/apple-docs-darwin-arm64"
-      sha256 "f085f9e2b7be1d0814ab826334989d2ed2f968cf87cb0cc57cb493a84cc5c21e"
+      url "https://packages.techprimate.com/apple-docs/bin/v0.1.0/apple-docs-darwin-arm64"
+      sha256 "abe04d6bff6b456fcdf41bcf4ef5759114977d4b3e857084f5336f52b231b836"
     end
     on_intel do
-      url "https://packages.techprimate.com/apple-docs/bin/v0.0.10/apple-docs-darwin-amd64"
-      sha256 "022a0bc964fde2f5ff492f099ea14d06c7c2993ae863181d6285f9255298b311"
+      url "https://packages.techprimate.com/apple-docs/bin/v0.1.0/apple-docs-darwin-amd64"
+      sha256 "db1fee8e562c17e996043dde2a2c5a3ce366d70374bd59f88696f2bc00e0deb9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://packages.techprimate.com/apple-docs/bin/v0.0.10/apple-docs-linux-arm64"
-      sha256 "2624d00d8d81f8f306b2444961b6b89996655de3587bd511e147a323c302a22b"
+      url "https://packages.techprimate.com/apple-docs/bin/v0.1.0/apple-docs-linux-arm64"
+      sha256 "587c9a21664f789a9e43db862dfd8452c663e202d59fb19c758f7cdde8fca725"
     end
     on_intel do
-      url "https://packages.techprimate.com/apple-docs/bin/v0.0.10/apple-docs-linux-amd64"
-      sha256 "7c81b0dbd41861a49143077c582ffaa55e8d3a1e0ec8ae2c72d3c895bacd7a7e"
+      url "https://packages.techprimate.com/apple-docs/bin/v0.1.0/apple-docs-linux-amd64"
+      sha256 "d006b4069e894b19e9b703828579b26bc2236e4b4ff7815e9815bb9de9f2611f"
     end
   end
 
